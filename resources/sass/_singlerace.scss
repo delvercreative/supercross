@@ -1,0 +1,385 @@
+#singleRace {
+  .page-title {
+    margin-top: 40px;
+    .card-body {
+      text-align: center;
+      .race-sub-header {
+        justify-content: center;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .race-location {
+        margin-right: 8px;
+      }
+      .race-date {
+        margin-left: 8px;
+      }
+      .race-entry-qty {
+        .label {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        
+      }
+      .race-status {
+        font-weight: 500;
+        font-size: 1.1rem;
+
+        text-transform: uppercase;
+        &.status-0 {
+          color: $status0;
+        }
+        &.status-1 {
+          color: $status1;
+        }
+        &.status-4 {
+          color: $status4;
+        }
+        
+      }
+    }
+    img {
+      &.race-class-logo {
+        width: 120px;
+        margin-top: -95px;
+      }
+    }
+  }
+  .number-plate{
+    background-size: 90%;
+    background-position: center;
+    width: 55px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.yam{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_yam.png');
+
+    }
+    &.hon{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_hon.png');
+
+    }
+    &.kaw{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_kaw.png');
+
+    }
+    &.suz{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_suz.png');
+
+    }
+    &.hus{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_hus.png');
+
+    }
+    &.ktm{
+      background-image: url('https://ninetwentygear.com/img/plates/plate_ktm.png');
+
+    }
+    .racer-number {
+      font-weight: 700;
+      color: #fff;
+      font-size: 25px;
+      font-style: italic;
+      letter-spacing: 0px;
+      font-family: 'Teko', sans-serif;
+    }
+  }
+  #timeBoard {
+    background: #252525;
+    color: #fff;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    margin-top: 30px;
+  }
+  
+  .flag-status-container {
+    width: 30%;
+    height: 35px;
+  }
+
+  .flag-class-4 {
+    background-image: url('https://ninetwentygear.com/img/checkered.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .flag-class-1 {
+    background: rgb(71,193,25);
+    background: linear-gradient(0deg, rgba(71,193,25,1) 43%, rgba(125,230,48,1) 65%);
+    height: 100%;
+    width: 100%;
+  }
+
+  .flag-class-3 {
+    background: rgb(180,8,8);
+    background: linear-gradient(0deg, rgba(180,8,8,1) 43%, rgba(240,18,18,1) 65%);
+    height: 100%;
+    width: 100%;
+  }
+  .flag-class-2 {
+    background: rgb(213,177,29);
+    background: linear-gradient(0deg, rgba(213,177,29,1) 43%, rgba(240,223,18,1) 65%);
+    height: 100%;
+    width: 100%;
+  }
+  
+  #timeRemaining {
+    font-size: 2.35rem;
+    font-weight: 500;
+    line-height: 1;
+    color: $bright-green;
+  }
+  .table-dark {
+    background-color: #252525;
+  }
+  .table-dark th, .table-dark td, .table-dark thead th {
+    border-color: #1a1a1a;
+  }
+
+  .table th, .table td {
+    vertical-align: middle;
+  }
+
+  .r-position {
+    padding-right: 0
+  }
+
+  .r-user {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    i {
+      color: $bright-green;
+    }
+  }
+
+  .r-name {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+  }
+  .r-plate {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .loading-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .lds-dual-ring:after {
+      border-color: $bright-blue transparent $bright-blue transparent
+    }
+  }
+
+  .scoring-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $bright-green;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #leaderBoard{
+    margin-top: 30px;
+    .gray-card{
+      flex-direction: row;
+      justify-content: center
+    }
+    .leader-item {
+      text-align: center;
+      .inner {
+        padding: 10px;
+      }
+    }
+    .user-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .points-details {
+      line-height: 1.2;
+      span {
+        &.sm-title {
+          text-transform: uppercase;
+          font-size: 0.63rem;
+          margin-right: 5px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+        }
+        &.winnings {
+          font-weight: 600;
+          color: $bright-green;
+        }
+      }
+      
+    }
+    i {
+      color: $bright-blue;
+      font-size: 24px;
+    }
+  }
+
+
+  #myRiders {
+    color: #dbdbdb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #141414;
+    left: 0;
+    .my-riders-header {
+      display: flex;
+      background: #0e0e0e;
+      .header-title {
+        width: 40%;
+        flex-basis: 40%;
+        padding: 5px 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: $bright-blue;
+        color: #0e0e0e;
+      }
+      .header-right {
+        width: 60%;
+        flex-basis: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        #toggleRiders {
+          text-align: right;
+          padding-right: 30px;
+          padding-left: 30px;
+          font-size: 22px;
+          i {
+            -webkit-transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
+          }
+          &.active{
+            i {
+              -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+    .riders-list-inner {
+      flex-wrap: wrap;
+      max-height: 0px;
+      overflow: scroll;
+      -webkit-transition: max-height 0.5s ease;
+      transition: max-height 0.5s ease;
+      &.show {
+        max-height: 275px;
+        padding:15px;
+      }
+      .my-rider-item {
+        width: 50%;
+        flex-basis: 50%;
+        padding: 5px;
+        .rider-item-inner {
+          background: #252525;
+          padding: 14px;
+          border: 1px solid #0e0e0e;
+        }
+        .items-list {
+          border-bottom: 1px solid #3a3a3a;
+          padding-bottom: 4px;
+          margin-bottom: 3px;
+          &:last-child {
+            border: none;
+          }
+          &.rider-position {
+            .head {
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              font-size: 0.8rem;
+            }
+            .position-value {
+              font-size: .95rem;
+              font-weight: 700;
+            }
+          }
+          &.rider-points-details {
+            display: flex;
+            justify-content: space-between;
+            .sm-title {
+              text-transform: uppercase;
+              font-size: 0.68rem;
+            }
+            .points-block {
+              margin-top: 7px;
+              span {
+                line-height: 1.35;
+                display: block;
+                &.points-value {
+                  font-size: .88rem;
+                  font-weight: 600;
+                }
+                &.lap-value {
+                  font-weight: 400;
+                  font-size: .79rem;
+                }
+              }
+            }
+          }
+        }
+        .rider-number-plate {
+          background-size: 90%;
+          background-position: center;
+          width: 65%;
+          height: 95px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          &.yam{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_yam.png');
+      
+          }
+          &.hon{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_hon.png');
+      
+          }
+          &.kaw{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_kaw.png');
+      
+          }
+          &.suz{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_suz.png');
+      
+          }
+          &.hus{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_hus.png');
+      
+          }
+          &.ktm{
+            background-image: url('https://ninetwentygear.com/img/plates/plate_ktm.png');
+      
+          }
+          .rider-number {
+            font-weight: 700;
+            color: #fff;
+            font-size: 37px;
+            font-style: italic;
+            letter-spacing: 0px;
+            font-family: 'Teko', sans-serif;
+          }
+        }
+        .rider-name {
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+}
